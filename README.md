@@ -6,7 +6,7 @@
 [![GitHub release](https://img.shields.io/github/release/RPFramework/RPFUtility.svg)](https://github.com/RPFramework/RPFUtility/releases)
 [![license](https://img.shields.io/github/license/RPFramework/RPFUtility.svg)](https://github.com/RPFramework/RPFUtility/blob/master/LICENSE)
 
-RPFUtility is an utility tool for tasks that at least Kerkkoh needs to do way too many times. These tasks are usually related to the development of [RPFramework](https://github.com/RPFramework/RPFramework/). If you happen to develop RPFramework and find yourself wanting a faster way to kill processes, pack and build pbos, starting the server up again and seeing the logs in realtime then download this. Contributions are appreciated. Developed with electron and just plain JS & some handlebars. If Kerkkoh talks about RPFUtils, he means this repository and is lazy.
+RPFUtility is an utility tool for tasks that at least Kerkkoh needs to do way too many times. These tasks are usually related to the development of [RPFramework](https://github.com/RPFramework/RPFramework/). If you happen to develop RPFramework and find yourself wanting a faster way to kill processes, pack and build pbos, starting the server up again and seeing the logs in realtime then download this. Contributions are appreciated. Developed with electron and just plain JS & some handlebars. If Kerkkoh talks about RPFUtils, he means this repository and is lazy. [Download RPFUtility here](https://github.com/RPFramework/RPFUtility/releases/latest)
 
 #### Note: RPFUtility should be ran with administrative rights since it needs to be able to kill processes. If you are concerned, it's fully open source right here!
 
