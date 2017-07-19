@@ -1,0 +1,71 @@
+pre {
+	margin-bottom:0;
+}
+.display-2 {
+	padding: 40px 20px 20px 20px;
+}
+.wrap {
+	padding: 10rem 20rem;
+}
+.btns {
+	margin-bottom:1rem;
+}
+.nbtn {
+	height: auto;
+	width: auto;
+	border: 0;
+	background: #0275d8;
+	border-radius: 0;
+	-webkit-user-select: auto;
+	color: white;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-weight: 300;
+	padding: .25rem 1rem;
+	cursor: pointer;
+}
+.nbtn:hover {
+	background: #0267C0;
+}
+#ext {
+	background: #D9534D;
+}
+#ext:hover {
+	background: #C9312C;
+}
+.nav-drag {
+	-webkit-user-select: none !important;
+	-webkit-app-region: drag !important;
+}
+.titlethang {
+	height: auto;
+	width: auto;
+	border: 0;
+	border-radius: 0;
+	-webkit-user-select: auto;
+	color: white;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-weight: 300;
+	padding: .25rem 1rem;
+	cursor: pointer;
+}
+input {
+	border-color: #c5c5c5 !important;
+}
+label {
+	margin-top:.25rem;
+}
+.btn-primary, .btn-success {
+	cursor:pointer;
+}
+pre {
+	margin: 2rem 0rem;
+}
+.card {
+	border-color: #a7a7a7;
+}
+.wrapcard {
+	padding-right: 0px;
+}
+.log {
+	padding-top: 15px;
+}

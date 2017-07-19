@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+		<nav class="container-fluid fixed-top navbar-inverse bg-primary">
+			<div class="row">
+				<div class="col-2 nav-drag btn titlethang text-left nav-drag"><span>{{title}} - {{version}}</span></div>
+				<div class="col-8 nav-drag"></div>
+				<div class="col-1 btn nbtn" id="minim">&boxh;</div>
+				<div class="col-1 btn nbtn" id="ext">X</div>
+			</div>
+		</nav>
+		<h1 class="display-2 text-center">{{title}}</h1>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-9 wrapcard">
+				<div class="card card-outline-secondary">
+				  <div class="card-block">
+					<h4 class="card-title">Preferences</h4>
+					<form>
+						<div class="form-group">
+							<label for="packpath">Path to pack.bat</label>
+							<input type="text" class="form-control" id="packpath" value="{{data.packpath}}">
+							<label for="buildpath">Path to build.bat</label>
+							<input type="text" class="form-control" id="buildpath" value="{{data.buildpath}}">
+							<label for="srvrpath">Path to server file</label>
+							<input type="text" class="form-control" id="srvrpath" value="{{data.srvrpath}}">
+							<label for="params">Server params (Default ones are from TADST)</label>
+							<input type="text" class="form-control" id="params" value='{{data.params}}'>
+							<label for="logs">Path to logs</label>
+							<input type="text" class="form-control" id="logs" value='{{data.logs}}'>
+						</div>
+					</form>
+				  </div>
+				</div>
+			</div>
+			<div class="btns col-3 text-right">
+				<button type="button" class="btn btn-primary btn-block" id="kill">Kill A3 & Server</button><br>
+				<button type="button" class="btn btn-primary btn-block" id="pack">Pack RPF</button><br>
+				<button type="button" class="btn btn-primary btn-block" id="build">Build RPF</button><br>
+				<button type="button" class="btn btn-primary btn-block" id="clear">Clear logs</button><br>
+				<button type="button" class="btn btn-primary btn-block" id="startsrvr">Start A3Server</button><br>
+				<button type="button" class="btn btn-success btn-block" id="save">Save preferences</button>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col log">
+			<h4>Log</h4>
+			<pre id="log">
+			</pre>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<h4>Latest Arma 3 Server Log <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>&nbsp;<button id="flush" type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="This speeds up the process of finding logs a lot!">Flush logs (remove all logs)</button></h4>
+			<pre id="alog">
+			</pre>
+		</div>
+	</div>
+	</div><!--container-fluid-->
+		
+	<script src="jquery.min.js"></script>
+	<script src="tether.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	
+	</body>
+	<script>
+		require('./renderer.js')
+	</script>
+</html>
