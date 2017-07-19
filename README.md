@@ -4,7 +4,7 @@
 [![TRELLO](https://img.shields.io/badge/Trello-View-0079BF.svg)](https://trello.com/b/eqwxQ4hr/rpframework)
 [![Website](https://img.shields.io/website-up-down-green-red/https/rpframework.github.io.svg)](https://rpframework.github.io/)
 [![GitHub release](https://img.shields.io/github/release/RPFramework/RPFUtility.svg)](https://github.com/RPFramework/RPFUtility/releases)
-[![license](https://img.shields.io/github/license/RPFramework/RPFUtility.svg)](https://github.com/RPFramework/RPFUtility/blob/master/LICENSE.txt)
+[![license](https://img.shields.io/github/license/RPFramework/RPFUtility.svg)](https://github.com/RPFramework/RPFUtility/blob/master/LICENSE)
 
 RPFUtility is an utility tool for tasks that at least Kerkkoh needs to do way too many times. These tasks are usually related to the development of [RPFramework](https://github.com/RPFramework/RPFramework/). If you happen to develop RPFramework and find yourself wanting a faster way to kill processes, pack and build pbos, starting the server up again and seeing the logs in realtime then download this. Contributions are appreciated. Developed with electron and just plain JS & some handlebars. If Kerkkoh talks about RPFUtils, he means this repository and is lazy.
 
