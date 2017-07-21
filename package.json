@@ -1,6 +1,6 @@
 {
   "name": "RPFUtility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RPFUtility for RPFramework developers",
   "main": "main.js",
   "scripts": {

@@ -2,7 +2,7 @@ const fkill = require('fkill');
 const $ = require('jquery');
 const child_process = require('child_process');
 const fs = require('fs');
-const os = require("os");
+const os = require('os');
 const eapp = require('electron').remote.app;
 
 let log = (a) => {
@@ -68,7 +68,7 @@ $( "#clear" ).click(() => {
 });
 //Save settings to a json file from which they are loaded to the app
 $( "#save" ).click(() => {
-	fs.writeFile(`${eapp.getPath("userData")}\\settings.json`, JSON.stringify({"packpath": $('#packpath').val(),"buildpath": $('#packpath').val(),"srvrpath": $('#srvrpath').val(),"params": $('#params').val(),"logs": $('#logs').val()}), (err) => {
+	fs.writeFile(`${eapp.getPath("userData")}\\settings.json`, JSON.stringify({"packpath": $('#packpath').val(),"buildpath": $('#buildpath').val(),"srvrpath": $('#srvrpath').val(),"params": $('#params').val(),"logs": $('#logs').val()}), (err) => {
 		if (err) throw err;
 		log("Saved preferences");
 	});
@@ -188,6 +188,6 @@ let listener = app.listen(3000, function () {
 	$.get("https://rpf-data.glitch.me/v", function(version, stat){
 		log(`Initialized RPFUtility. Current RPFramework version is ${version}. Current RPFUtility version is ${eapp.getVersion()}`);
 		log('WebLogger: Your log listener is listening on port ' + listener.address().port);
-		log('Go to "localhost:3000/log/Your message here" on your browser to test it or make a GET request to it from the server.')
+		log('WebLogger: Test it in your browser "localhost:3000/log/Your message here"');
 	});
 });
