@@ -24,9 +24,4 @@ RPFUtility is an utility tool for tasks that at least Kerkkoh needs to do way to
 1. Fork the repository
 2. Install node.js
 3. Go to your fork in cmd and run "npm install && npm start"
-<<<<<<< HEAD
 4. Optional: Pack it with asar, get one of the electron releases, throw the asar in resources as app.asar and run the executable, edit the executable with rcedit
-=======
-4. Start editing
-5. Use asar to pack it into an app.asar
->>>>>>> origin/master
