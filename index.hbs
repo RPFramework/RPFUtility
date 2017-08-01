@@ -52,23 +52,23 @@
 	<div class="row">
 		<div class="col log">
 			<h4>Log</h4>
-			<pre id="log">
-			</pre>
+			<textarea class="form-control" rows="10" id="log" disabled>
+			</textarea>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col">
 			<h4>Latest Arma 3 Server Log <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>&nbsp;<button id="flush" type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="This speeds up the process of finding logs a lot!">Flush logs (remove all logs)</button></h4>
-			<pre id="alog">
-			</pre>
+			<textarea class="form-control" rows="10" id="alog" disabled>
+			</textarea>
 		</div>
 	</div>
 	</div><!--container-fluid-->
-		
+
 	<script src="bootstrap/js/jquery.min.js"></script>
 	<script src="bootstrap/js/tether.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
+
 	</body>
 	<script>
 		require('./js/renderer.js')
