@@ -14,6 +14,7 @@ RPFUtility is an utility tool for tasks that at least Kerkkoh needs to do way to
 
 ### Contributors
 * **Kerkko(h)**
+* **MichaelSwissA3**
 
 ### Installing RPFUtility
 1. Just [download](https://github.com/RPFramework/RPFUtility/releases/latest) the archive and extract it somewhere and lauch the executable.
