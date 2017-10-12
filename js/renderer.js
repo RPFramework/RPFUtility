@@ -52,8 +52,8 @@ $( "#pack" ).click(() => {
 	});
 });
 $( "#build" ).click(() => {
-	let packpath = $('#packpath').val();
-	child_process.exec(packpath, function(error, stdout, stderr) {
+	let buildpath = $('#buildpath').val();
+	child_process.exec(buildpath, function(error, stdout, stderr) {
 		log("!breaker");
 		if (error) {
 			log(error);

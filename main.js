@@ -15,7 +15,7 @@ try {
 } catch(err) {
 	if(err.code === "EEXIST") gotSettings = true
 }
-let settings = JSON.stringify({"packpath":"RPFramework\\pack.bat","buildpath":"RPFramework\\pack.bat","srvrpath":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe","params":"-port=2302 \"-config=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\\TADST_config.cfg\" \"-cfg=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\\TADST_basic.cfg\" \"-profiles=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\" -name=rpf -pid=pid.log -ranking=ranking.log \"-mod=@extDB3;@RPF_Server;@RPFramework\"","logs":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf"})
+let settings = JSON.stringify({"packpath":"RPFramework\\pack.bat","buildpath":"RPFramework\\build.bat","srvrpath":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe","params":"-port=2302 \"-config=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\\TADST_config.cfg\" \"-cfg=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\\TADST_basic.cfg\" \"-profiles=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf\" -name=rpf -pid=pid.log -ranking=ranking.log \"-mod=@extDB3;@RPF_Server;@RPFramework\"","logs":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\TADST\\rpf"})
 if (gotSettings) {
 	settings = fs.readFileSync(spath)
 } else {
