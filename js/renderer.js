@@ -181,12 +181,19 @@ app.get("/log/:msg", function (req, res) {
   log(`WebLogger: ${req.params.msg}`);
   res.send({status: "Logged successfully", success: true});
 });
+app.get("/", function (req, res) {
+  res.send("To log a message, go to: <a href='localhost:3000/log/Your message here'>localhost:3000/log/Your message here</a>");
+});
 
 let listener = app.listen(3000, function () {
 	$("#log").text("");
 	//Initialize message with version getting from rpf-data server
 	$.get("https://rpf-data.glitch.me/v", function(version, stat){
-		log(`Initialized RPFUtility. Current RPFramework version is ${version}. Current RPFUtility version is ${eapp.getVersion()}`);
+		if (version.length > 8) {
+			log(`Initialized RPFUtility. Current RPFUtility version is ${eapp.getVersion()}`);
+		} else {
+			log(`Initialized RPFUtility. Current RPFramework version is ${version}. Current RPFUtility version is ${eapp.getVersion()}`);
+		}
 		log('WebLogger: Your log listener is listening on port ' + listener.address().port);
 		log('WebLogger: Test it in your browser "localhost:3000/log/Your message here"');
 	});

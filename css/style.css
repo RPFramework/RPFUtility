@@ -34,6 +34,11 @@ pre {
 }
 .nav-drag {
 	-webkit-user-select: none !important;
+	-khtml-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	-o-user-select: none !important;
+	user-select: none !important;
 	-webkit-app-region: drag !important;
 }
 .titlethang {
@@ -68,4 +73,8 @@ pre {
 }
 .log {
 	padding-top: 15px;
+}
+textarea {
+	margin-bottom: 15px;
+	margin-top: 10px;
 }
